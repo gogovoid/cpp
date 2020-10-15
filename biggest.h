@@ -2,7 +2,7 @@
 #define BIGGEST_H
 #include <iostream>
 using namespace std;
-class Biggest;
+//class Biggest;
 class Biggest
 {
 	private:
