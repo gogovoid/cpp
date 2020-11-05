@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cassert>
 using namespace std;
 
 int main(){
@@ -6,6 +7,10 @@ int main(){
 	for(int k = 0; k < 4; k++){
 		cin >> n1;
 		cin >> n2;
+		if(n2 == 0){
+			cout << "Can not divide by zero!" << endl;
+			assert(false);
+		}
 		r = n1 / n2;
 		cout << r << "\n";
 	}
