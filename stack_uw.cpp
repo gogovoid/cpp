@@ -1,27 +1,18 @@
 #include <iostream>
 using namespace std;
 
-int f2(int yy){
-	int z;
-	cout << "f2() is running...\n";
-	return 2;
-}
-
-int f1(int xx){
-	int y;
+void f1(int n1, int n2){
+	string e = "Divide by Zero Error!";
+	if(n2 == 0) throw e;
 	cout << "f1() start\n";
-	f2(y);
-	cout << "f1() end\n";
-	return 1;
 }
 
 int main(){
-	int x;
-	//int s;
-	//double d[s];
-	cout << "main start\n";
-	f1(x);
-	cout << "main end\n";
+	try {
+		f1(9, 0);
+	} catch (const string& err){
+		cout << err << "\n";
+	}
 	return 0;
 }
 
