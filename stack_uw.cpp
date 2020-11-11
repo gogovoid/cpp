@@ -10,8 +10,9 @@ void f1(int n1, int n2){
 int main(){
 	try {
 		f1(9, 0);
-	} catch (const string& err){
-		cout << err << "\n";
+	//} catch (const string& err){
+	} catch (int code_no){
+		cout << code_no << "\n";
 	}
 	return 0;
 }
